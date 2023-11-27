@@ -1,0 +1,7 @@
+@import url('./geral.css');
+@import url('./animation.css');
+@import url('./transition.css');
+
+main p {
+  text-indent: 30px;
+}

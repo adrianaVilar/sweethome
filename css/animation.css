@@ -1,0 +1,52 @@
+.casa-div {
+  width: 100px;
+  height: 100%;
+  padding: inherit;
+}
+
+.casa {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 1vw;
+  width: 1.5vw;  
+  height: 1.5vw;
+  background-color: var(--cor-destaque);
+
+  animation-name: casa;  
+  animation-duration: 2s;       
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;  
+}
+
+@keyframes casa {
+0% {left: 0px; top: 10px;}
+15% {left: 10px; top: 0px;}
+30% {left: 30px; top: 10px;}
+40% {left: 25px; top: 10px;}
+55% {left: 25px; top: 20px;}
+70% {left: 10px; top: 20px;}
+80% {left: 10px; top: 10px;}
+100% {left: 0px; top: 10px;}
+}
+
+/* telas maiores */
+@media (min-width: 700px) {
+  .casa {
+    width: 0.5vw;  
+    height: 0.5vw;
+    align-items: center;
+  }
+
+  @keyframes casa {
+0% {left: 0px; top: 20px;}
+15% {left: 20px; top: 0px;}
+30% {left: 60px; top: 20px;}
+40% {left: 50px; top: 20px;}
+55% {left: 50px; top: 40px;}
+70% {left: 20px; top: 40px;}
+80% {left: 20px; top: 20px;}
+100% {left: 0px; top: 20px;}
+}
+
+}

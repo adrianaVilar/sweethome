@@ -1,0 +1,16 @@
+aside {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 15vw;
+}
+
+
+/* telas maiores */
+@media (min-width: 700px) {
+  aside {
+    width: 15vw;
+    height: auto;
+    align-items: center;
+  }
+}
